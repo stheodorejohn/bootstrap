@@ -15,10 +15,10 @@
 
 
   <title> MOBILE NAV</title>
+ 
 
 
-
-
+ 
 
 </head>
 
@@ -106,8 +106,7 @@
 
     <!--CHICKEN CONTENT STARTS BELOW-->
     <!--CHICKEN QUOTES STARTS BELOW-->
- 
-
+  
     <!--CHICKEN QUOTES ENDS ABOVE-->
     <!--CHICKEN ROW STARTS BELOW-->
     <div class="row ">
@@ -134,6 +133,21 @@
                   </div>
                   <div class="col-auto my-1">
 
+
+                    
+                    <p>asdasd<br><br></p>
+                    <input id=demoInput type=number min=100 max=110>
+                    <button onclick="increment()">+</button>
+                    <button onclick="decrement()">-</button>
+                    <script>
+                        function increment() {
+                            document.getElementById('demoInput').stepUp();
+                        }
+                        function decrement() {
+                            document.getElementById('demoInput').stepDown();
+                        }
+                    </script>
+                    
                     <div class="custom-control custom-checkbox mr-sm-2">
 
                       <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
