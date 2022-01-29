@@ -1,0 +1,28 @@
+.bgimg-1 {
+    /* background-image: url("media/contactus.jpg");
+            /* height: 100%; */
+    /* position: relative;
+            opacity: 0.9;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+
+    background-image: url("media/contactus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.9; */
+    
+}
+
+.bg-mildblue {
+    background-color: rgba(135, 206, 235, 0.5);
+}
+
+
+.bgimg-2{
+    background-image: url("media/login.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

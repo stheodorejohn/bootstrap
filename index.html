@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +27,7 @@
 
 <!-- style="max-width:1280px; margin: auto ;" -->
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="max-width:1280px; margin: auto ;">
 
 
 
@@ -42,104 +43,137 @@
         <header>
 
           <!-- Top Nav bar -->
+          <nav class="navbar  navbar-expand-lg   fixed-top d-flex  flex-row   navbar-light bg-white ">
 
 
 
-          
-
-
-          <nav
-            class="navbar  navbar-expand-md   fixed-top d-flex  flex-row   border border-danger navbar-light bg-white ">
-            <a class="navbar-brand border border-primary  " href="#"> <img src="media/logocover.gif" width="150"
-                height="30" class="d-inline-block align-top" alt="John Meats">
-              <!-- <span class="h4" style="font-family: 'Aladin', cursive;">John Meats</span> -->
+            <a class="navbar-brand  d-none d-sm-block " href="index.html"> <img src="media/logocover.gif" width="150" height="30"
+                class="d-inline-block align-top" alt="John Meats">
             </a>
-           
+
+
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse nav-pills navbar-collapse " id="navbarCollapse">
+            <div class="collapse nav-pills navbar-collapse    " id="navbarCollapse">
               <ul class="navbar-nav mr-auto ">
 
-
-              
               </ul>
-              <nav class="navbar ">
-                <form class="form-inline d-flex  flex-row   ">
-                  <input class="form-control  mr-sm-2" type="search" placeholder="Search " aria-label="Search">
-                  <button class="btn-sm d-inline-block btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-fw fa-search"></i></button>
-                </form>
-              </nav>
-              <ul class="navbar-nav  d-flex  flex-row justify-content-between align-items-start ">
-               
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#aboutus">Receipes</a>
+              <ul class="navbar-nav  d-flex flex-row justify-content-end   ">
+
+
+                <li class="nav-item d-none d-sm-flex    ">
+                  <input class="form-control pt-1 mr-sm-2" type="search" placeholder="Search " aria-label="Search"
+                    style="width: 25vw;">
+                  <button class="btn  pt-0 pb-0   d-inline-block border border-primary    " type="submit"><i
+                      class="fa fa-fw fa-search h6   "></i></button>
                 </li>
 
+                <li class="nav-item   ">
 
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#aboutus">Contact Us</a>
+                  <a class="nav-link mx-1   pt-1 border border-primary pl-1 " href="recipes.html">Recipes</a>
                 </li>
 
-
                 <li class="nav-item">
-                  <a class="nav-link" href="#aboutus">About Us</a>
+                  <a class="nav-link  mx-1   pt-1 border border-primary px-1  " href="contactus.html">Contact Us</a>
                 </li>
 
-                <li class=""><a href="#">
-                    <!-- <i class="fa fa-shopping-cart border border-primary rounded-circle bg-secondary px-2 py-1 text-light  h3" aria-hidden="true"> <sup> <span class=" ml-n2  mt-n5 text-primary">2</span> </sup>  </i>
-                     -->
-                    <i class="fa fa-shopping-cart  py-0  text-secondary   h3" aria-hidden="true">
+                <li class="nav-item">
+                  <a class="nav-link   mx-1   pt-1 border border-primary px-1   " href="aboutus.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link   mx-1   pt-1 border border-primary px-1 " href="partnerwithus.html">Partner with Us</a>
+                </li>
+
+                <li class="nav-item d-none d-sm-block   ">
+                  <a class="nav-link  mx-1   pt-1 border border-primary   " href="login.html">Login </a>
+                </li>
+
+                <li class=" d-none d-sm-block">
+                  <a href="#"> <i class="fa fa-shopping-cart  py-0  text-secondary   h3" aria-hidden="true">
                       <sup> <span
                           class="  ml-n3 mt-n5 h6 bg-success text-light font-weight-bold  rounded-circle text-primary border border-primary   ">2</span>
-                      </sup>
+                      </sup> </i>
+                  </a>
+                </li>
 
-                    </i>
-                  </a></li>
+              </ul>
+
+              <!-- For mobile  -->
+              <ul class="navbar-nav  d-block  d-sm-none  d-flex  flex-row justify-content-end   ">
+
+                <li>
+                  <input class="form-control-sm  mr-sm-2" type="search" placeholder="Search " aria-label="Search"
+                    style="width: 25vw;">
+                  <button class="btn-sm d-inline-block btn-outline-success my-2 my-sm-0" type="submit"><i
+                      class="fa fa-fw fa-search"></i></button>
+                </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link p-2 border border-primary   m-1 " href="#aboutus">Login </a>
+                </li>
+
 
 
               </ul>
             </div>
+
+
+
+
+
+
+            <!-- cart for ONLY mobile  -->
+
+            <a class="navbar-brand  d-block  d-sm-none " href="#"> <img src="media/logocover.gif" width="150"
+                height="30" class="d-inline-block align-top" alt="John Meats">
+            </a>
+
+            <i class=" d-block  d-sm-none py-auto fa fa-shopping-cart     text-secondary   h3" aria-hidden="true">
+              <sup> <span
+                  class="  ml-n3 mt-n5 h6 bg-success text-light font-weight-bold  rounded-circle text-primary border border-primary   ">2</span>
+              </sup> </i>
+
           </nav>
 
+          <!--  Bottom Nav Bar   -->
 
-          <!-- Bottom Nav Bar -->
+          <nav class="navbar navbar-expand     px-0 py-0 fixed-bottom  ">
 
-
-          <nav class="navbar navbar-expand fixed-bottom bg-white border border-dark ">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#"> </a>
-
-            <!-- Toggler/collapsibe Button -->
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
 
             <!-- Navbar links -->
-            <div class="collapse nav-pills navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
+            <div class="collapse nav-pills  navbar-collapse   " id="collapsibleNavbar">
+              <ul class="navbar-nav mx-auto bg-white border border-success rounded my-2 d-flex flex-row ">
+                <li class="nav-item p-1 ">
+                  <a class="nav-link badge badge-pill d-block d-sm-none  badge-secondary" href="#chicken">Chicken</a>
+                  <a class="nav-link  d-none d-sm-block " href="#chicken">Chicken</a>
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link badge badge-pill badge-secondary d-block d-sm-none  " href="#mutton">Mutton</a>
+                  <a class="nav-link d-none d-sm-block     " href="#mutton">Mutton</a>
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link badge badge-pill badge-secondary d-block d-sm-none  " href="#seafood">SeaFoods</a>
+                  <a class="nav-link d-none d-sm-block  " href="#seafood">SeaFoods</a>
 
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link badge badge-pill badge-secondary  d-block d-sm-none " href="#readytofry">Ready to
+                    Fry</a>
+                  <a class="nav-link  d-none d-sm-block " href="#readytofry">Ready to Fry</a>
 
-                <li class="nav-item">
-                  <a class="nav-link badge badge-pill badge-secondary" href="#chicken">Chicken</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link badge badge-pill badge-secondary " href="#mutton">Mutton</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link badge badge-pill badge-secondary " href="#seafood">SeaFoods</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link badge badge-pill badge-secondary " href="#readytofry">Ready to Fry</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link badge badge-pill badge-secondary" href="#egg">Egg</a>
-                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link badge badge-pill badge-secondary d-block d-sm-none  " href="#egg">Egg</a>
+                  <a class="nav-link d-none d-sm-block " href="#egg">Egg</a>
 
+                </li>
 
               </ul>
             </div>
@@ -184,7 +218,7 @@
 
     <!--CHICKEN CONTENT STARTS BELOW-->
     <!--CHICKEN QUOTES STARTS BELOW-->
-    <div class="row" id="chicken">
+    <div class="row   " id="chicken">
 
       <div class="col-12 ">
         <div class="jumbotron  jumbotron-fluid">
@@ -3332,32 +3366,103 @@
 
     <!--EGG CONTENT ENDS ABOVE-->
 
-    <!--ABOUT US CONTENT STARTS BELOW-->
-    <div class="jumbotron" id="aboutus">
-      <h1 class="display-4">About Us</h1>
-      <p class="lead text-justify" style="text-indent: 50px;">At John Meat, we’re big meat-lovers. And by big, we mean
-        huge.
-        So when it comes to the meat we put on your plate, we’re extremely picky. Every single product is handpicked by
-        a team with years of experience.</p>
-      <hr class="my-4">
-      <p>Your search for <span class="font-italic">Relish Juicy and handpicked Tender Meat </span>ends here,
-        <span class="font-weight-bold"> Sit back Navigate, Order and Relax.....</span>
-      </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-    <!--ABOUT US CONTENT ENDS ABOVE-->
+
+
+
+    <!-- 
+              </div>
+
+                </div> -->
+
+    <!-- FOOTER -->
+
+    <footer class="container-fluid  ">
+
+      <div class="row     ">
+        <div class="col-12 col-md-3   ">
+          <div class="bg-mildblue   border border-dark rounded  ">
+            <h3 class="   text-primary">
+              Locations
+            </h3>
+            <h6 class=" text-center "> <a class=" font-weight-normal text-dark" href="#">Bangalore</a>
+            </h6>
+            <h6 class="text-center  "> <a class=" font-weight-normal text-dark" href="#">Chennai</a> </h6>
+            <h6 class=" text-center "> <a class=" font-weight-normal text-dark" href="#">Delhi</a> </h6>
+            <h6 class="text-center  "> <a class=" font-weight-normal text-dark" href="#">Mumbai</a> </h6>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 ">
+          <div class="bg-mildblue  border border-dark rounded  ">
+
+            <h3 class=" text-center   text-primary">
+              Quick Links
+            </h3>
+            <h6 class=" text-center "> <a class=" font-weight-normal text-dark" href="recipes.html">Recipes</a> </h6>
+            <h6 class="text-center  "> <a class=" font-weight-normal text-dark" href="contactus.html">Contact Us</a>
+            </h6>
+            <h6 class=" text-center "> <a class=" font-weight-normal text-dark" href="aboutus.html">About Us</a> </h6>
+            <h6 class="text-center  "> <a class=" font-weight-normal text-dark" href="partnerwithus.html">Partner with Us</a> </h6>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3   ">
+          <div class="bg-mildblue   border border-dark rounded  ">
+            <h3 class=" text-center    text-primary">
+              Contact
+              Info</h3>
+            <h6 class="text-center  "> <a href="#" class="  text-center font-weight-normal text-dark">+91 987 - 654
+                -
+                3210</a> </h6>
+            <h6 class="text-center  "> <a href="#" class=" text-center font-weight-normal text-dark">+91 998 - 877 -
+                6655</a>
+            </h6>
+            <h6 class=" text-center "> <a class=" text-center font-weight-normal text-dark" href="#">contactus@mnm.com</a> </h6>
+            <h6 class="text-center  "> <a href="#" class=" text-center font-weight-normal text-dark">ceo@mnm.com</a>
+            </h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3     ">
+
+          <div class="bg-mildblue   border border-dark rounded  ">
+
+            <h3 class="      text-primary  text-center   ">Follow Us</h3>
+
+            <h6 class="  text-center   "> <a href="#" class="font-weight-normal text-dark"> <i class="fa fa-facebook"
+                  aria-hidden="true"></i>
+                Facebook </a> </h6>
+            <h6 class="  text-center "> <a href="#" class="font-weight-normal text-dark"> <i class="fa fa-twitter"
+                  aria-hidden="true"></i>
+                Twitter </a> </h6>
+            <h6 class="   text-center  "> <a href="#" class="font-weight-normal text-dark"> <i class="fa fa-instagram"
+                  aria-hidden="true"></i>
+                Instagram </a> </h6>
+            <h6 class="   text-center  "> <a href="#" class="font-weight-normal text-dark"> <i class="fa fa-telegram  "
+                  aria-hidden="true"></i>
+                Telegram </a> </h6>
+
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="container-fluid   m-2   ">
+        <div class="row  ">
+          <div class="col-12  ">
+            <div class="mb-5 px-5 py-2 border border-success  rounded  bg-mildblue  ">
+              <p class="float-right "><a class="text-dark" href="#">Back to top</a></p>
+              <p>&copy; 2017-2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
 
   </div>
 
-  </div>
-
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="container mx-md-5">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
