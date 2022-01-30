@@ -29,3 +29,25 @@
     background-position: center;
     background-size: cover;
 }
+
+.chicken  {
+    
+    background-image: url('media/bg.jpg');
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+
+}
+
+#bg1  {
+    
+    background-image: url('media/bg-2.jpg');
+ 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+
+}
