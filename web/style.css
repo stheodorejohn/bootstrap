@@ -1,5 +1,5 @@
 .bgimg-1 {
-    background-image: url("media/contactus.jpg");
+    background-image: url("../media/contactus.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
@@ -10,21 +10,29 @@
 }
 
 .bgimg-2{
-    background-image: url("media/login.jpg");
+    background-image: url("../media/login.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .bgimg-3{
-    background-image: url("media/partnerwithus.jpg");
+    background-image: url("../media/partnerwithus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bgimg-4{
+    background-image: url("../media/faq.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .how_to_make {
-    background-image: url("media/howtomake-1.jpg");
+    background-image: url("../media/howtomake-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -32,7 +40,7 @@
 
 .chicken  {
     
-    background-image: url('media/bg.jpg');
+    background-image: url('../media/bg.jpg');
    
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,7 +51,7 @@
 
 #bg1  {
     
-    background-image: url('media/bg-2.jpg');
+    background-image: url('../media/bg-2.jpg');
  
     background-repeat: no-repeat;
     background-attachment: fixed;
