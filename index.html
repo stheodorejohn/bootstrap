@@ -5,7 +5,7 @@
 
   <!-- for scroll animation -->
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,8 +34,8 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="max-width:1280px; margin: auto ;">
 
-<div id="progressBar"></div>
-<div id="scrollPath"></div>
+  <div id="progressBar"></div>
+  <div id="scrollPath"></div>
 
 
   <div class="container-fluid  ">
@@ -124,17 +124,8 @@
                 <li class="nav-item">
                   <a class="nav-link p-2 border border-primary   m-1 " href="web/login.html">Login </a>
                 </li>
-
-
-
-
               </ul>
             </div>
-
-
-
-
-
 
             <!-- cart for ONLY mobile  -->
 
@@ -178,7 +169,7 @@
                 </li>
                 <li class="nav-item p-1">
                   <a class="nav-link badge badge-pill badge-secondary d-block d-sm-none  " href="#egg">Egg</a>
-                  <a class="nav-link d-none d-sm-block " href="#egg">Egg</a>
+                  <a class="nav-link d-none d-sm-block " href="#egg">Eggs</a>
 
                 </li>
 
@@ -225,7 +216,7 @@
 
     <!--CHICKEN CONTENT STARTS BELOW-->
     <!--CHICKEN QUOTES STARTS BELOW-->
-    <div class="row   " id="chicken" data-aos="fade-right" >
+    <div class="row   " id="chicken" data-aos="fade-right">
 
       <div class="col-12 ">
         <div class="jumbotron  jumbotron-fluid">
@@ -268,7 +259,7 @@
             <!--PRODUCT STARTS-->
             <div class="card shadow  p-3 mb-5 bg-white rounded mx-1 card-body"
               style="   max-width: 15rem;  min-width: 300px;">
-              <span class="badge   badge-warning  pb-3 ">Best Seller</span>
+              <span class="badge   badge-warning  pb-1 ">Best Seller</span>
               <img src="media/prod_01_01.jpg" class="card-img-top pb-2" alt="Chicken Curry Cut (Small Pcs)">
               <h6 class="card-title font-weight-bold  text-center mb-0 pb-0">Chicken Curry Cut</h6>
               <h6 class="card-title font-weight-bold  text-center text-white  mb-0 pb-0"> (Small Pcs)</h6>
@@ -291,43 +282,20 @@
                   </p>
                 </div>
               </div>
+
+              <!-- Quantity count and button -->
               <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
 
 
@@ -361,43 +329,20 @@
                   </p>
                 </div>
               </div>
+              
+              <!-- Quantity count and button -->
               <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
 
 
@@ -434,44 +379,21 @@
                   </p>
                 </div>
               </div>
+                <!-- Quantity count and button -->
               <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -507,44 +429,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -577,44 +476,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -649,44 +525,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -721,44 +574,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -792,44 +622,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -864,44 +671,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -936,44 +720,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -1007,44 +768,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -1080,44 +818,21 @@
                   </p>
                 </div>
               </div>
+              <!-- Quantity count and button -->
               <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -1152,44 +867,21 @@
                   </p>
                 </div>
               </div>
-              <div class="form-row align-items-center">
-                <div class="col-6 mb-0">
-                  <form>
-                    <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                    <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                      <option class=" text-center" selected>Quantity</option>
-                      <option class=" text-center" value="1">1.0 </option>
-                      <option class=" text-center" value="2">2.0 </option>
-                      <option class=" text-center" value="3">3.0 </option>
-                      <option class=" text-center" value="4">4.0 </option>
-                      <option class=" text-center" value="5">5.0 </option>
-                      <option class=" text-center" value="6">6.0 </option>
-                      <option class=" text-center" value="7">7.0 </option>
-                      <option class=" text-center" value="8">8.0 </option>
-                      <option class=" text-center" value="9">9.0 </option>
-                      <option class=" text-center" value="10">10.0 </option>
-                    </select>
-                  </form>
+               <!-- Quantity count and button -->
+               <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
                 </div>
-
-                <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
                 <div class="col-6   my-1">
-                  <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
                 </div>
-
               </div>
+
 
 
             </div>
@@ -1216,7 +908,7 @@
 
 
 
-    <div class="row" id="mutton" data-aos="fade-right" >
+    <div class="row" id="mutton" data-aos="fade-right">
 
       <div class="col-12 ">
         <div class="jumbotron jumbotron-fluid">
@@ -1287,44 +979,21 @@
                 </p>
               </div>
             </div>
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -1359,44 +1028,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+
+             <!-- Quantity count and button -->
+              <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
+                </div>
+                <div class="col-6   my-1">
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+                </div>
               </div>
 
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
-            </div>
 
 
           </div>
@@ -1430,44 +1077,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+
+            <!-- Quantity count and button -->
+              <div class="form-row align-items-center">
+                <div class="col-6   mb-0 d-flex ">
+                  <div class="box">
+                    <label for="name">Qty:</label>
+                    <div class="dec button">-</div>
+                    <input type="text" name="qty" id="1" value="0" class="input-filed">
+                    <div class="inc button">+</div>
+                  </div>
+                </div>
+                <div class="col-6   my-1">
+                  <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+                </div>
               </div>
 
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
-            </div>
 
 
           </div>
@@ -1501,44 +1126,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -1573,44 +1176,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+            
+             <!-- Quantity count and button -->
+             <div class="form-row align-items-center">
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -1645,44 +1226,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -1719,45 +1278,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-outline-primary "> <span
-                    class="spinner-grow spinner-grow-sm"></span> Notify Me</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -1797,7 +1333,7 @@
 
 
 
-    <div class="row" id="seafood" data-aos="fade-right" >
+    <div class="row" id="seafood" data-aos="fade-right">
 
       <div class="col-12 ">
         <div class="jumbotron jumbotron-fluid">
@@ -1872,44 +1408,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -1944,44 +1458,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+         
+          <!-- Quantity count and button -->
+          <div class="form-row align-items-center">
+            <div class="col-6   mb-0 d-flex ">
+              <div class="box">
+                <label for="name">Qty:</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="1" value="0" class="input-filed">
+                <div class="inc button">+</div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
             </div>
+            <div class="col-6   my-1">
+              <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
 
 
           </div>
@@ -2018,44 +1510,23 @@
                 </p>
               </div>
             </div>
+           
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2091,44 +1562,23 @@
                 </p>
               </div>
             </div>
+           
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2164,44 +1614,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+            
+             <!-- Quantity count and button -->
+             <div class="form-row align-items-center">
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2237,44 +1665,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+          
+           <!-- Quantity count and button -->
+           <div class="form-row align-items-center">
+            <div class="col-6   mb-0 d-flex ">
+              <div class="box">
+                <label for="name">Qty:</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="1" value="0" class="input-filed">
+                <div class="inc button">+</div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
             </div>
+            <div class="col-6   my-1">
+              <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
 
 
           </div>
@@ -2309,44 +1715,23 @@
                 </p>
               </div>
             </div>
+           
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2380,44 +1765,23 @@
                 </p>
               </div>
             </div>
+           
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2448,7 +1812,7 @@
 
 
 
-    <div class="row" id="readytofry" data-aos="fade-right" >
+    <div class="row" id="readytofry" data-aos="fade-right">
 
       <div class="col-12 ">
         <div class="jumbotron jumbotron-fluid">
@@ -2520,44 +1884,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2592,44 +1934,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+         
+          <!-- Quantity count and button -->
+          <div class="form-row align-items-center">
+            <div class="col-6   mb-0 d-flex ">
+              <div class="box">
+                <label for="name">Qty:</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="1" value="0" class="input-filed">
+                <div class="inc button">+</div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
             </div>
+            <div class="col-6   my-1">
+              <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
 
 
           </div>
@@ -2665,44 +1985,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2736,44 +2034,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2809,44 +2085,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+            
+             <!-- Quantity count and button -->
+             <div class="form-row align-items-center">
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2882,44 +2136,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+            
+             <!-- Quantity count and button -->
+             <div class="form-row align-items-center">
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -2954,44 +2186,22 @@
                 </p>
               </div>
             </div>
+           
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -3022,7 +2232,7 @@
 
 
 
-    <div class="row" id="egg" data-aos="fade-right" >
+    <div class="row" id="egg" data-aos="fade-right">
 
       <div class="col-12 ">
         <div class="jumbotron jumbotron-fluid">
@@ -3098,44 +2308,22 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+          
+           <!-- Quantity count and button -->
+           <div class="form-row align-items-center">
+            <div class="col-6   mb-0 d-flex ">
+              <div class="box">
+                <label for="name">Qty:</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="1" value="0" class="input-filed">
+                <div class="inc button">+</div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
             </div>
+            <div class="col-6   my-1">
+              <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
 
 
           </div>
@@ -3171,44 +2359,21 @@
                 </p>
               </div>
             </div>
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -3244,44 +2409,21 @@
                 </p>
               </div>
             </div>
-            <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+           <!-- Quantity count and button -->
+           <div class="form-row align-items-center">
+            <div class="col-6   mb-0 d-flex ">
+              <div class="box">
+                <label for="name">Qty:</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="1" value="0" class="input-filed">
+                <div class="inc button">+</div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
-              <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
-              </div>
-
             </div>
+            <div class="col-6   my-1">
+              <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
 
 
           </div>
@@ -3318,44 +2460,21 @@
                 </p>
               </div>
             </div>
+            <!-- Quantity count and button -->
             <div class="form-row align-items-center">
-              <div class="col-6 mb-0">
-                <form>
-                  <!-- <label class="mr-sm-2   sr-only" for="inlineFormCustomSelect"> </label> -->
-                  <select class="custom-select-sm mr-sm-2" id="inlineFormCustomSelect">
-                    <option class=" text-center" selected>Quantity</option>
-                    <option class=" text-center" value="1">1.0 </option>
-                    <option class=" text-center" value="2">2.0 </option>
-                    <option class=" text-center" value="3">3.0 </option>
-                    <option class=" text-center" value="4">4.0 </option>
-                    <option class=" text-center" value="5">5.0 </option>
-                    <option class=" text-center" value="6">6.0 </option>
-                    <option class=" text-center" value="7">7.0 </option>
-                    <option class=" text-center" value="8">8.0 </option>
-                    <option class=" text-center" value="9">9.0 </option>
-                    <option class=" text-center" value="10">10.0 </option>
-                  </select>
-                </form>
+              <div class="col-6   mb-0 d-flex ">
+                <div class="box">
+                  <label for="name">Qty:</label>
+                  <div class="dec button">-</div>
+                  <input type="text" name="qty" id="1" value="0" class="input-filed">
+                  <div class="inc button">+</div>
+                </div>
               </div>
-
-              <!-- <input class=demoInput type=number min=100 max=110>
-                  <button  type="button" onclick="increment(#demoinput)">+</button>
-                  <button  type="button"onclick="decrement(#demoinput)">-</button>
-                  <script>
-                     function increment(id1) {
-                        document.getElementById(id1).stepUp();
-                     }
-                     function decrement(id2) {
-                        document.getElementById(id2).stepDown();
-                     }
-                  </script> -->
-
-
               <div class="col-6   my-1">
-                <button type="button" class="btn-sm btn-primary">Add to Cart</button>
+                <button type="button" class="cartbtn btn-sm btn-primary">Add to Cart</button>
               </div>
-
             </div>
+
 
 
           </div>
@@ -3383,9 +2502,9 @@
 
     <!-- FOOTER -->
 
-    <footer class="container-fluid pt-5 " >
+    <footer class="container-fluid pt-5 ">
 
-      <div class="row     "  >
+      <div class="row     ">
         <div class="col-12 col-md-3  pb-3 ">
           <div class="bg-mildblue   border border-dark rounded  ">
             <h3 class=" text-center  text-primary">
@@ -3398,7 +2517,7 @@
             <h6 class="text-center  "> <a class=" font-weight-normal text-dark" href="#">Mumbai</a> </h6>
           </div>
         </div>
-        <div class="col-12 col-md-3 pb-3 "  >
+        <div class="col-12 col-md-3 pb-3 ">
           <div class="bg-mildblue  border border-dark rounded  ">
 
             <h3 class=" text-center   text-primary">
@@ -3441,8 +2560,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-3     "  
-        >
+        <div class="col-12 col-md-3     ">
 
           <div class="bg-mildblue   border border-dark rounded  ">
 
@@ -3467,7 +2585,7 @@
         </div>
 
       </div>
-      <div class="container-fluid   m-2   "  >
+      <div class="container-fluid   m-2   ">
         <div class="row  ">
           <div class="col-12  ">
             <div class="mb-5 px-5 py-2 border text-center border-success  rounded  bg-mildblue  ">
@@ -3504,7 +2622,7 @@
   <!-- for scroll animation  -->
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="web/script.js"> </script>
+  <script src="web/script.js"> </script>
 </body>
 
 </html>
