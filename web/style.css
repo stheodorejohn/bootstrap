@@ -77,7 +77,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 10px;
+    width: 8px;
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
